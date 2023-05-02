@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+div > nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+a {
+    margin: auto;
+
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:active {
+    color: #00ff9d;
+}
