@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sakura.min.css" />
+
+    <script src="./sakura.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var sakura = new Sakura("body", {
+        colors: [
+          {
+            gradientColorStart: "rgba(255, 183, 197, 0.9)",
+            gradientColorEnd: "rgba(255, 197, 208, 0.9)",
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: "rgba(255,189,189)",
+            gradientColorEnd: "rgba(227,170,181)",
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: "rgba(212,152,163)",
+            gradientColorEnd: "rgba(242,185,196)",
+            gradientColorDegree: 120,
+          },
+        ],
+        delay: 200,
+      })
+    </script>
+    <div id="main-view">
+      <div id="left">
+        <section class="waifu">
+          <header>weeb_art.png</header>
+          <img src="art0.jpg" class="waifu-art" width="360" loading="lazy" />
+        </section>
+        <section>
+          <header>Contact</header>
+          <div class="contact-section">
+            <div
+              class="contact"
+              id="discord"
+              style="background-color: #404eedde"
+              title="Copy my username!"
+            >
+              <img src="discord.svg" height="24" />
+              <p id="discord-text">Discord</p>
+            </div>
+            <div class="contact" id="github" style="background-color: #cacaca">
+              <img src="github.svg" height="24" />
+              <p>Github</p>
+            </div>
+          </div>
+          <div class="contact-section">
+            <div
+              class="contact"
+              id="facebook"
+              style="background-color: #1773ea"
+            >
+              <img src="facebook.svg" height="24" />
+              <p>Facebook</p>
+            </div>
+            <div id="mail" class="contact" style="background-color: #00ff77">
+              <img src="mail.svg" height="24" />
+              <p>Gmail</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="right">
+        <section style="width: 24rem">
+          <header>My projects</header>
+          <div class="projects">
+            <ul>
+              <li>
+                <p>To do app</p>
+                <h5>
+                  A simple to-do webapp I made for learning fullstack
+                  development.
+                </h5>
+                <a href="https://github.com/kg2714/to-do-app">Github</a>
+                <a href="https://to-do-webapp-eight.vercel.app/">Production</a>
+              </li>
+              <li>
+                <p>Profile</p>
+                <h5>Yes!! The website you are seeing.</h5>
+                <a href="https://github.com/kg2714/NewProfile">Github</a>
+              </li>
+              <li>
+                <p>Simple Music Player</p>
+
+                <h5>
+                  A small project I made for learning electron and local
+                  filesystem access in NodeJS.
+                </h5>
+                <a href="https://github.com/kg2714/Simple-Music-Player"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <p>Decode Challenge</p>
+                <h5>
+                  A small game I developed when I was a beginner of learning to
+                  code. This project is written in Java 8.
+                </h5>
+                <a href="https://github.com/kg2714/decodechall">Github</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section style="width: 24em">
+          <header>About me</header>
+          <p style="margin: 1em">
+            I'm an ordinary student and weeb. I'm learning fullstack and
+            mobile/desktop application development. I'm looking for partners or
+            teams to work with. If I can't, I will be a solo dev. Check out my
+            contact section for more information. Happy hacking!!!
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

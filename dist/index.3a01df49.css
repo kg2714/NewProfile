@@ -1,0 +1,41 @@
+@font-face {
+  font-family: ProductSans;
+  src: url("Product Sans Regular.aabf992d.otf");
+}
+
+body {
+  letter-spacing: 1px;
+  background-color: #000;
+  margin: 0;
+  font-family: ProductSans;
+}
+
+#main-view {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+section {
+  background: #fff;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 10px;
+  box-shadow: 0 0 1em #fff;
+}
+
+.waifu-art {
+  object-fit: cover;
+  height: 40vh;
+}
+
+.contact {
+  border-radius: 10px;
+  align-items: center;
+  gap: 1em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
