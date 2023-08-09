@@ -1,4 +1,16 @@
+//https://nekos.life/api/v2/img/neko
 const main = document.body
+
+const imageElement = document.querySelector(".waifu-art")
+
+async function getImage() {
+  const res = await fetch("https://nekos.life/api/v2/img/neko")
+  const img = await res.json()
+  console.log(img.url)
+  imageElement.setAttribute("src", img.url)
+}
+
+getImage()
 
 main.style.opacity = "0"
 
